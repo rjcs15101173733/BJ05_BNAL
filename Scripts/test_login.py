@@ -51,7 +51,7 @@ class TestLogin():
                 self.login.page_click_login_btn()
                 # 断言toast消息
                 assert toast_expect in self.login.base_get_toast(toast_expect)
-                allure.attach('断言描述：','断言成功')
+                allure.attach('断言描述：','失败断言成功')
             except:
                 # 截图
                 self.login.base_getImage()
